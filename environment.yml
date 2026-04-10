@@ -1,0 +1,31 @@
+name: nj-pipeline
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pandas=2.2
+  - numpy
+  - requests
+  - python-dotenv
+  - tqdm
+  - jupyter
+  - jupyterlab
+  - ipykernel
+  - matplotlib
+  - seaborn
+  - plotly
+  - openpyxl
+  - xlrd
+  - pyarrow         # Parquet support
+  - fastparquet
+  - pip:
+    - duckdb==1.1.3
+    - census==0.8.21       # Census Bureau API wrapper
+    - sodapy==2.2.0        # Socrata API (CDC PLACES, NJ Open Data)
+    - us==3.1.1            # US states/FIPS lookups
+    - geopandas            # spatial joins if needed
+    - shapely
+    - folium               # interactive maps in notebooks
+    - nbformat             # notebook utilities

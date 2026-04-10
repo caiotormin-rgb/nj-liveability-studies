@@ -1,0 +1,44 @@
+# Environment & secrets
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large raw data (available on Kaggle dataset)
+data/raw/zillow/
+data/db/
+
+# Logs
+*.log
+pipeline.log
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tool configs (local only)
+.ai/
+.claude/
+
+# Obsidian vault internals
+NJ_Analysis_Vault/.obsidian/
+NJ_Analysis_Vault/.trash/
